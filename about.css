@@ -1,0 +1,180 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Body styling */
+body {
+background-image: linear-gradient(to right, #1A1A2E, #E94560, #F5F5F5  );
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Navigation */
+.navigation {
+  background-image: linear-gradient(to right, #1A1A2E, #E94560, #F5F5F5  );
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.nav-logo span {
+  color: #FFFFFF;
+  font-family: castellar;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: default;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+   flex-wrap: nowrap; 
+  overflow-x: auto; 
+  scrollbar-width: none; 
+}
+.nav-menu::-webkit-scrollbar {
+  display: none; 
+}
+
+
+.nav-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap; /* prevent breaking text */
+}
+
+.nav-link:hover{
+
+  text-decoration: underline;
+  color: #1a1818;
+  outline: none;
+  transition: width 0.3s ease;
+}
+
+.nav-link:focus {
+  color: #1a1818;
+  outline: none;
+  transition: width 0.3s ease;
+}
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #e94560; /* hover effect color */
+}
+
+
+/* Hero Section / About Content */
+.hero {
+  background-color: #4cd1a04b;
+  color: #FFFFFF;
+  padding: 5rem 1.5rem 6rem;
+  text-align: center;
+}
+
+.hero .container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: serif;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Footer */
+.footer {
+   background-image: linear-gradient(to right, #1A1A2E, #E94560, #F5F5F5  );
+  color: #FFFFFF;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  color: #FFFFFF;
+  margin: 0 0.6rem;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #3EB489;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 0;
+  }
+   .nav-menu {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .nav-link {
+    padding: 0.8rem 1rem;
+  }
+}
