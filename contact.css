@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #e3f0ff 0%, #f4f8fb 100%);
+  color: #1a2a4e;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Navigation */
+.navigation {
+  background: #1a2a4e;
+  box-shadow: 0 2px 8px rgba(26,42,78,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.nav-logo img {
+  height: 40px;
+  margin-right: 0.75rem;
+}
+
+.nav-logo span {
+  color: #4da3ff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.nav-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+
+.nav-link:hover,
+.nav-link:focus {
+  background: #4da3ff;
+  color: #fff;
+  outline: none;
+}
+
+/* Hero Section */
+#contact-hero {
+  background: linear-gradient(90deg, #4da3ff 0%, #1a2a4e 100%);
+  color: #fff;
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(77,163,255,0.10);
+  max-width: 900px;
+  margin: 3rem auto;
+}
+
+#contact-hero .container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#contact-hero h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+#contact-hero p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #e3f0ff;
+}
+
+/* Contact Info Section */
+.contact-info {
+  background: #e3f0ff;
+  color: #1a2a4e;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(77,163,255,0.08);
+  padding: 2rem 1.5rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Form */
+.contact-form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(77,163,255,0.08);
+  padding: 2rem 1.5rem;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.contact-form h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1a2a4e;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #1a2a4e;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #b3c7e6;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #e3f0ff;
+  color: #1a2a4e;
+  transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4da3ff;
+  outline: none;
+}
+
+.contact-form button {
+  background: #4da3ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-form button:hover {
+  background: #1a2a4e;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  color: #4da3ff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #1a2a4e;
+}
+
+/* Footer */
+.footer {
+  background: #1a2a4e;
+  color: #fff;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 -2px 8px rgba(26,42,78,0.08);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .nav-container, #contact-hero, .contact-info, .contact-form, .footer {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 0;
+    background: #1a2a4e;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(26,42,78,0.08);
+    z-index: 100;
+    display: none;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .hamburger div {
+    height: 3px;
+    background: #4da3ff;
+    border-radius: 2px;
+  }
+}

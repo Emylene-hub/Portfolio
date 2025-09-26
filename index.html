@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Emylene Way</title>
+    <link rel="stylesheet" href="Style/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="My port/me.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="My port/mylogo.png" alt="Logo" class="logo-image">
+                <span>Productivity App</span>
+            </a>
+             <!-- Hamburger button for mobile -->
+                <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+                </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="indexp.html" class="nav-link">Portfolio</a></li>
+                <li><a href="About.html" class="nav-link">About</a></li>
+                <li><a href="Contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+        
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="headline">Empowering Leaders. Shaping Stories. The Emylene Way</h1>
+                <p>Inspiring and equipping leaders to make a meaningful impact while fostering personal and cultural growth through storytelling, all uniquely guided by Emylene’s values and vision.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals -->
+    <section class="trust-signals">
+        <div class="container">
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p>"Transformed how I work, every single day."</p>
+                <span class="author">– Emy A.</span>
+            </div>
+            <div class="logos">
+                <div class="logo">Wired</div>
+                <div class="logo">Fast Company</div>
+                <div class="logo">Product Hunt</div>
+            </div>
+            <div class="security-badges">
+                <span class="badge">Secure</span>
+                <span class="badge">Private</span>
+                <span class="badge">No spam</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How it Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+                    <h3>Sign Up</h3>
+                    <p>Create your account in seconds</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Organize</h3>
+                    <p>Set up your workspace</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Achieve</h3>
+                    <p>Reach your goals faster</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="iframe-section">
+  <div class="container">
+    <h1>My Location</h1>
+    <div class="iframe-wrapper">     
+      <iframe 
+        width="720" 
+        height="600" 
+        frameborder="0" 
+        scrolling="no" 
+        marginheight="0" 
+        marginwidth="0" 
+        src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=Holy%20Child%20Central%20Colleges%20Inc.+(My%20School)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+    </iframe>
+    </div>   
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/emylene.alegre.7" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/emi_lin._/" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">© 2025 Productivity App. All rights reserved.</p>
+        </div>
+    </footer>
+<script>
+    {/* Select hamburger button and navigation menu  */}
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelectorAll('.nav-link');
+    hamburger.addEventListener('click', () => {
+        document.querySelector('.nav-menu').
+        classList.toggle('active');
+    });
+    hamburger.onclick = function() {
+        navMenu.classList.toggle('onclick');
+    }
+</script>
+
+   
+</body>
+</html>
