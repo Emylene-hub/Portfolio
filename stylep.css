@@ -89,7 +89,6 @@ body {
   box-shadow: 0 8px 32px rgba(77,163,255,0.10);
   max-width: 900px;
   margin: 3rem auto;
-  text-align: center;
   text-align: justify;
 }
 
@@ -291,4 +290,5 @@ body {
   }
 
 }
+
 
