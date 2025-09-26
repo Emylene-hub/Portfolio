@@ -72,6 +72,13 @@ body {
   color: #fff;
   outline: none;
 }
+
+.headline {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a2a4e;
+}
 .my-pic {
   width: 500px;
   height: 500px;
@@ -290,5 +297,6 @@ body {
   }
 
 }
+
 
 
