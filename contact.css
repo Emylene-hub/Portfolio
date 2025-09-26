@@ -78,7 +78,7 @@ body {
   background: linear-gradient(90deg, #4da3ff 0%, #1a2a4e 100%);
   color: #fff;
   padding: 4rem 1.5rem 3rem;
-  text-align: center;
+  text-align: justify;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(77,163,255,0.10);
   max-width: 900px;
@@ -254,4 +254,5 @@ body {
     background: #4da3ff;
     border-radius: 2px;
   }
+
 }
